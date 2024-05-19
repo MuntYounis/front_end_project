@@ -1,86 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './base.css';
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family:Poppins;
-}
-header{
-    background-color: white;
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 0px;
-    
-}
-.container{
-    padding:0px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-a {
-    color: black; /* Set the color to black */
-    text-decoration: none; /* Remove the underline */
-}
-
-a:visited {
-    color: black; /* Set the color to black for visited links */
-}
-
-a:hover {
-    color: black; /* Set the color to black when hovered */
-}
-
-a:active {
-    color: black; /* Set the color to black when active */
+.header{
+    position: sticky;
+    top: 0;
 }
 
 .logo-section{
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
-.container ul{
+.nav ul{
     display: flex;
-    list-style-type: none;
-    gap: 40px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.logo-section p{
+.logo-section a{
     font-family: Roboto;
     font-weight: 700;
-    color: #545BE8;
+    color: var(--mainColor);
 
 }
 .logo-section img{
     width: 40px;
     height: 40px;
 }
-.logs{
+.auth{
     display: flex;
-    gap: 15px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-button{
-    color: #545BE8;
-    border: 2px solid #545BE8;
-    background: white;
-    border-radius: 5px;
-    width: 170px;
-    height: 40px;
-    font-weight: 600;
-
-}
-.logs button:nth-child(2) {
+.auth button:nth-child(2) {
     background: #545BE8;
     color: white; 
 }
 
 .active{
-    font-weight: 800;
+    font-weight: 900;
 }
 
+.header .auth a{
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+
+}
+
+.header .auth a:first-of-type{
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+.header .auth a:last-of-type{
+    background-color: var(--mainColor);
+    color: #fff;
+    
+}
+
+@media (max-width:920px){
+    .nav{
+        display: none;
+    }
+}
