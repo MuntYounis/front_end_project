@@ -1,8 +1,9 @@
 @import './base.css';
-
+/* Start of Header */
 .header{
     position: sticky;
     top: 0;
+    background-color: #fff;
 }
 
 .logo-section{
@@ -65,4 +66,85 @@
     .nav{
         display: none;
     }
+}
+/* End header */
+
+/* Start of footer */
+
+.footer{
+    background-color: #393E46;
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer .row{
+    gap: 40px;
+}
+
+.footer .footer-end, .footer .footer-start{
+    width: calc( (100% - 40px)/ 2 );
+}
+
+.footer .footer-start{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-start .logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.footer .footer-start .logo img{
+    width: 40px;
+}
+
+.footer .footer-start .logo a{
+    font-size: 14px;
+}
+
+.footer .footer-start p{
+    color:#F4F4F4;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer .footer-start .icons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-start .icons img{
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    box-sizing: content-box;
+}
+
+.footer .footer-end .row{
+    align-items: flex-start;
+
+}
+
+.footer-end .footer-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-end .footer-item ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
 }
