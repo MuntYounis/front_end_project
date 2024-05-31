@@ -85,8 +85,63 @@
 }
 /* End header */
 
-/* Start of testimonials */
+/* Start Courses */
+.courses{
+    padding: 40px 0;
+    
+    
+}
+.courses .row{
+    gap: 30px;
+    align-items: flex-start;
+}
 
+
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc( (100% - 30px) / 2 );
+    
+}
+
+.course-card{
+    position: relative;
+}
+
+.course-card img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+}
+.course-card,.course-description{
+    width: calc( (100% - 30px) / 2 );
+}
+
+.class-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0px;
+    color: #fff;
+}
+.class-info span:first-of-type{
+    background-color:var(--mainColor);
+    padding: 20px;
+}
+
+.class-info span:last-of-type{
+    color: #fff;
+    size: 20px;
+    align-self: flex-end;
+}
+/* End Courses */
+/* Start of testimonials */
 .testimonials{
     text-align: center;
     padding: 40px 0px;
