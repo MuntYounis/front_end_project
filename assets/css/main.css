@@ -84,7 +84,173 @@
     }
 }
 /* End header */
+/* Welcome section */
 
+.introduction{
+    margin-top: 40px;
+    align-items: flex-start;
+    position: relative;
+
+}
+.introduction .row{
+    align-items: flex-start;
+}
+.introduction h2{
+    font-size: 60px;
+}
+.introduction .welcome{
+    width: calc( (100% - 40px) / 2 );
+}
+.welcome span{
+    color: var(--mainColor);
+}
+.introduction img{
+    width: calc( (100% - 40px) / 4 );
+    position: absolute;
+    top: 10%; /* Adjust this value to position the image vertically */
+    right: 10%; /* Adjust this value to position the image horizontally */
+    transform: translate(0%, 0%); /* Center the image */
+    aspect-ratio: 1;    
+}
+/* End of welcome Section */
+/* Start of Plans */
+.plans .intro-video{
+    width: 50%;
+    color: #969696;
+
+}
+
+.plans .intro-video img{
+    width: 40px;
+    
+    
+}
+.plans .container{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-color: #f5f5f5;
+    padding: 0px 10px 40px 10px;
+
+}
+
+
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttons .play-video{
+    display: flex;
+    align-items: center;
+}
+
+.buttons .play-video {
+    font-size: 18px;
+    font-weight: 800;
+}
+.first-button{
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.plans .plan-description{
+    display: flex;
+    flex-direction: column;
+    width: calc( (100% - 30px) );
+    gap: 60px;
+    
+}
+
+.plans .plan-description span:first-of-type{
+    color: var(--mainColor);
+}
+.plans .plan-description span:last-of-type{
+    color: #969696;
+}
+.plans .plan-description h3{
+    font-size: 30px;
+    width: 60%;
+}
+
+.the-plans .row{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.plan-tickets{
+    display: flex;
+    gap: 20px;
+}
+
+.plan-tickets img{
+    width: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.ticket{
+    width: calc( (100% - 40px/ 3) );
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+/* End of Plans */
+/* start of selected courses */
+.selected-courses{
+    background-color: var(--mainColor);
+
+}
+.selected-courses .container{
+    padding: 50px;
+    justify-content: none;
+}
+
+.selected-courses .container .row img{
+    width: 50% - 40px;
+}
+
+.selected-courses .container .row .stats{
+    width: calc( (100% - 40px) / 2 );
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.selected-courses .container .row .stats span:first-of-type{
+    color: #f0c932;
+}
+.selected-courses .container .row .stats{
+    color: #fff;
+}   
+
+.selected-courses .container .row .stats h3{
+    font-size: 40px;
+    width: 90%;
+}
+.numbered-stats .numbers,.numbered-stats .figures{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: flex-start;
+
+}
+.stat-numbers{
+    color: #f0c932;
+}
+
+#details{
+    color: #fff;
+}
+
+/* end of selected courses */
 /* Start Courses */
 .courses{
     padding: 40px 0;
@@ -102,12 +268,14 @@
     flex-wrap: wrap;
     gap: 20px;
     width: calc( (100% - 30px) / 2 );
-    
 }
+
 
 .course-card{
     position: relative;
+    height: calc( (100% - 60px) / 2);
 }
+
 
 .course-card img{
     height: 100%;
@@ -132,14 +300,46 @@
 }
 .class-info span:first-of-type{
     background-color:var(--mainColor);
-    padding: 20px;
+    padding: 10px;
+
 }
 
-.class-info span:last-of-type{
+.class-info span:last-of-type {
     color: #fff;
+    padding: 10px;
     size: 20px;
+    position: absolute;
+    bottom: 20%; /* Adjust the position to your liking */
+    right: 0%; /* Adjust the position to your liking */
     align-self: flex-end;
 }
+
+.course-details .row:first-of-type span{
+    color: #545BE8;
+}
+
+.course-details .row:first-of-type h3{
+    font-weight: 900;
+}
+
+.course-details .row:last-of-type{
+    justify-content: flex-start;
+    color: gray;
+    
+}
+
+.course-description a {
+    display: inline-block; /* Make the link an inline-block element */
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size if needed */
+    max-width: 200px;
+}
+
 /* End Courses */
 /* Start of testimonials */
 .testimonials{
@@ -224,8 +424,24 @@
     display: inline-block;
 }
 
+.course-description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
+}
 
+.course-description span{
+    color: var(--mainColor);
+}
+
+.course-description h2{
+    font-size: xx-large;
+}
+
+.course-description p{
+    color: gray;
+}
 /* end of testimonials */
 /* Start of footer */
 
